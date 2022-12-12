@@ -18,5 +18,12 @@ def lengthOfLongestSubstring(s):
                 current.remove(s[i])
             current.add(s[i])
     return longest
+
+"""
+This solution works by iterating over the characters in the string and keeping track of the longest substring seen so far. It uses a set to keep track of the characters in the current substring, and updates the longest substring if necessary. If the current character is already in the current substring, it removes all of the characters in the current substring up to and including the current character and then adds the current character to the current substring.
+
+The runtime of this solution is O(n), where n is the length of the input string, because the inner loop only runs once for each character in the string. This means that the solution is efficient for long strings.
+
+"""
  
 
